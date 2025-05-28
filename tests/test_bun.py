@@ -4,7 +4,7 @@ from data.test_data import BUN_VALID_NAME, BUN_VALID_FLOAT_PRICE
 class TestBun:
 
     def test_get_bun_name(self, bun):
-        assert bun.get_name() == BUN_VALID_NAME, 'Имя булочки не соответствует ожидаемому'
+        assert bun.get_name() == BUN_VALID_NAME, f'Имя булочки не соответствует ожидаемому'
 
     def test_get_bun_price(self, bun):
         assert bun.get_price() == BUN_VALID_FLOAT_PRICE, 'Цена булочки не соответствует ожидаемой'
