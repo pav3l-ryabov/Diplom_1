@@ -5,6 +5,7 @@ from data.test_data import BUN_VALID_NAME, BUN_VALID_FLOAT_PRICE, INGREDIENT_TYP
     INGREDIENT_PRICE_VALID
 from praktikum.bun import Bun
 from praktikum.burger import Burger
+from praktikum.ingredient import Ingredient
 
 
 @pytest.fixture
@@ -25,3 +26,7 @@ def mock_and_add_ingredient():
     burger.add_ingredient(mock_ingredient)
 
     return burger, mock_ingredient
+
+@pytest.fixture
+def ingredient():
+    return Ingredient(INGREDIENT_TYPE_VALID, INGREDIENT_NAME_VALID, INGREDIENT_PRICE_VALID)
