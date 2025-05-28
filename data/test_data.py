@@ -1,0 +1,2 @@
+BUN_VALID_NAME = 'tralalelo tralala'
+BUN_VALID_FLOAT_PRICE = 199.99
